@@ -3,7 +3,7 @@ require_once 'sanitize.php';
 $f = $c = '';
 
 if (isset($_POST['f'])) $f = sanitizeString($_POST['f']);
-if (isset($_POST['с'])) $c = sanitizeString($_POST['с']);
+if (isset($_POST['c'])) $c = sanitizeString($_POST['c']);
 
 if (is_numeric($f)) {
   $c = intval((5 / 9) * ($f - 32));
